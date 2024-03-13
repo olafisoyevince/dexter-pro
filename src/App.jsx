@@ -5,18 +5,7 @@ import Services from "./pages/Services";
 import Vendors from "./pages/Vendors";
 import Users from "./pages/Users";
 import Payments from "./pages/Payments";
-import Sidebar from "./components/Sidebar";
-import Navbar from "./components/Navbar";
-
-const AppLayout = () => (
-    <div className=" flex ">
-        <Sidebar />
-        <div className=" w-[80%] 2xl:w-[85%]">
-            <Navbar />
-            <Outlet />
-        </div>
-    </div>
-);
+import AppLayout from "./components/Layout";
 
 const router = createBrowserRouter([
     {
