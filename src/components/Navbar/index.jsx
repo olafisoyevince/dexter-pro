@@ -1,9 +1,46 @@
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Notification, ArrowDown2, User } from "iconsax-react";
 
 const Navbar = () => {
+    const [title, setTitle] = useState();
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        switch (pathname) {
+            case "/":
+                setTitle("Welcome Dexter Admin,");
+                break;
+
+            case "/service-request":
+                setTitle("Service Requests");
+                break;
+
+            case "/vendors":
+                setTitle("Vendors");
+                break;
+
+            case "/users":
+                setTitle("Users");
+                break;
+
+            case "/services":
+                setTitle("Services");
+                break;
+
+            case "/payments":
+                setTitle("Payments");
+                break;
+
+            default:
+                setTitle("Welcome Dexter Admin,");
+                break;
+        }
+    }, [pathname]);
+
     return (
         <nav className=" bg-white h-[48px] rounded-lg px-2 flex items-center justify-between">
-            <h1 className=" font-semibold ">Welcome Dexter Admin,</h1>
+            <h1 className=" font-semibold text-xl">{title}</h1>
 
             <div className=" flex items-center gap-6">
                 <Notification color="#8D9091" />
