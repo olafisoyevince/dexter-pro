@@ -3,7 +3,7 @@ import ratings from "../../assets/ratings.png";
 
 const TopRatedUsers = () => {
     return (
-        <div className=" bg-white rounded-lg px-5">
+        <div className=" bg-white rounded-lg px-5 shadow">
             <h1 className=" text-xl text-center pt-3 pb-7 font-medium text-[#6A6B6D]">
                 Top Rated Users
             </h1>
@@ -18,7 +18,7 @@ const TopRatedUsers = () => {
                             <div>
                                 <img src={avatar} alt="" />
                             </div>
-                            <p className=" font-medium text-sm">{name}</p>
+                            <p className=" font-medium text-sm pl-2">{name}</p>
                         </div>
 
                         <div>

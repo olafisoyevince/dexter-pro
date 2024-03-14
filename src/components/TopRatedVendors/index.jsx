@@ -3,7 +3,7 @@ import ratings from "../../assets/ratings.png";
 
 const TopRatedVendors = () => {
     return (
-        <div className=" bg-white rounded-lg px-5">
+        <div className=" bg-white rounded-lg px-5 shadow">
             <h1 className=" text-xl text-center pt-3 pb-7 font-medium text-[#6A6B6D]">
                 Top Rated Vendors
             </h1>
