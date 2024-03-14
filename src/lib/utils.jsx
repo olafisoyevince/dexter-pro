@@ -103,3 +103,41 @@ export const topRatedUsersData = [
         name: "Sabi Girl",
     },
 ];
+
+export const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    const options = {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+    };
+
+    const formattedDate = date.toLocaleDateString("en-US", options);
+    const [month, day, year] = formattedDate.split(" ");
+
+    return `${parseInt(day)}${getDaySuffix(parseInt(day))} ${month} ${year}`;
+};
+
+const getDaySuffix = (day) => {
+    if (day >= 11 && day <= 13) {
+        return "th";
+    }
+    switch (day % 10) {
+        case 1:
+            return "st";
+        case 2:
+            return "nd";
+        case 3:
+            return "rd";
+        default:
+            return "th";
+    }
+};
+
+export const truncateText = (text, maxLength) => {
+    if (text.length <= maxLength) {
+        return text;
+    } else {
+        return text.substring(0, maxLength) + "...";
+    }
+};
