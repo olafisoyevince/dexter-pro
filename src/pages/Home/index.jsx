@@ -1,16 +1,8 @@
-import threemen from "../../assets/threemen.png";
-import gear from "../../assets/gear.png";
-import service from "../../assets/service.png";
-import users from "../../assets/users.png";
-import calender from "../../assets/calender.png";
-import avatar from "../../assets/avatar.png";
-import ratings from "../../assets/ratings.png";
-
 import { ArrowLeft2, ArrowRight2 } from "iconsax-react";
-
 import TopRatedVendors from "../../components/TopRatedVendors";
 import TopRatedUsers from "../../components/TopRatedUsers";
 import Stats from "../../components/Stats";
+import calender from "../../assets/calender.png";
 
 const Home = () => {
     return (

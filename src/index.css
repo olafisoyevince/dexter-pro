@@ -12,3 +12,7 @@
 .shadow {
     box-shadow: 0px 7px 20px -6px #3a57431c;
 }
+
+.active {
+    @apply text-white bg-[#3A5743];
+}
