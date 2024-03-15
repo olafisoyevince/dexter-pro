@@ -3,6 +3,7 @@ import { TwoUsers, User } from "react-iconly";
 import { MessageQuestion, TruckFast, ShoppingCart } from "iconsax-react";
 
 import avatar from "../assets/avatar.png";
+import threeusers from "../assets/threeusers.svg";
 
 export const sidebarData = [
     {
@@ -20,7 +21,7 @@ export const sidebarData = [
     {
         id: 3,
         route: "/vendors",
-        icon: <User />,
+        icon: <img src={threeusers} alt="" srcset="" />,
         title: "Vendors",
     },
     {

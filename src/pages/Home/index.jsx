@@ -3,6 +3,7 @@ import TopRatedVendors from "../../components/TopRatedVendors";
 import TopRatedUsers from "../../components/TopRatedUsers";
 import Stats from "../../components/Stats";
 import calender from "../../assets/calender.png";
+import graph from "../../assets/graph.png";
 
 const Home = () => {
     return (
@@ -24,7 +25,9 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className=" rounded-lg h-[540px] mt-7 bg-white"></div>
+                    <div className=" rounded-lg h-auto mt-7 bg-white px-4 pt-4 pb-32">
+                        <img src={graph} alt="" />
+                    </div>
                 </div>
 
                 <div className=" w-[34%] h-[600px] flex flex-col gap-4 ">

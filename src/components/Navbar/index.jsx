@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Notification, ArrowDown2, User } from "iconsax-react";
 
+import notif from "../../assets/notif.png";
+
 const Navbar = () => {
     const [title, setTitle] = useState();
     const { pathname } = useLocation();
@@ -43,7 +45,7 @@ const Navbar = () => {
             <h1 className=" font-semibold text-xl">{title}</h1>
 
             <div className=" flex items-center gap-6">
-                <Notification color="#8D9091" />
+                <img src={notif} alt="" />
 
                 <div className=" flex items-center gap-2">
                     <div className=" bg-[#CCE1BF] rounded-full h-8 w-8 flex justify-center items-center">
