@@ -62,7 +62,7 @@ const Users = () => {
                         {users.length === 0 ? (
                             <div>No users found.</div>
                         ) : (
-                            <table className=" bg-white w-full text-center text-[#8D9091] table-fixed">
+                            <table className=" bg-white w-full text-center text-[#8D9091]">
                                 <thead>
                                     <tr className=" text-left py-4 border-b border-b-black">
                                         <th className=" text-left pl-2 py-4 text-sm font-normal">
