@@ -5,7 +5,7 @@ const Pagination = () => {
     const numbers = [1, 2, 3, 4, 5, 6, "...", 10];
 
     return (
-        <div className="bg-white h-[48px] rounded-lg px-3 flex items-center justify-between text-[#8D9091] text-sm font-normal absolute bottom-0 left-0 right-0">
+        <div className="bg-white h-[48px] rounded-lg px-3 flex items-center justify-between text-[#8D9091] text-sm font-normal absolute bottom-8 left-0 right-0">
             <p>1-11 of 875 items</p>
 
             <div className="flex gap-6">
