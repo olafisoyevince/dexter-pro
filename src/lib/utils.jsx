@@ -3,6 +3,8 @@ import { TwoUsers, User } from "react-iconly";
 import { MessageQuestion, TruckFast, ShoppingCart } from "iconsax-react";
 
 import avatar from "../assets/avatar.png";
+import avatar2 from "../assets/avatar2.png";
+import avatar3 from "../assets/avatar3.png";
 import threeusers from "../assets/threeusers.svg";
 
 export const sidebarData = [
@@ -53,25 +55,25 @@ export const topRatedVendorsData = [
     },
     {
         id: 2,
-        avatar: avatar,
+        avatar: avatar2,
         name: "Efik Ayo",
         job: "Carpenter",
     },
     {
         id: 3,
-        avatar: avatar,
+        avatar: avatar3,
         name: "Victor Siji",
         job: "Makeup Artiste",
     },
     {
         id: 4,
-        avatar: avatar,
+        avatar: avatar3,
         name: "Tolani Chelsea",
         job: "House Cleaner",
     },
     {
         id: 5,
-        avatar: avatar,
+        avatar: avatar3,
         name: "Amala Moon",
         job: "Restaurant",
     },
@@ -85,22 +87,22 @@ export const topRatedUsersData = [
     },
     {
         id: 2,
-        avatar: avatar,
+        avatar: avatar2,
         name: "Ifeoluwa",
     },
     {
         id: 3,
-        avatar: avatar,
+        avatar: avatar3,
         name: "Oluchi",
     },
     {
         id: 4,
-        avatar: avatar,
+        avatar: avatar3,
         name: "Emiliano Rora",
     },
     {
         id: 5,
-        avatar: avatar,
+        avatar: avatar3,
         name: "Sabi Girl",
     },
 ];
