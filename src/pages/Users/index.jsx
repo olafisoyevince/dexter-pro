@@ -46,7 +46,7 @@ const Users = () => {
 
     console.log(users);
     return (
-        <div className="h-[100vh]  relative">
+        <div className="h-[50em]  relative">
             <div className="pb-10">
                 <DropdownMenu
                     handleFilterClick={handleFilterClick}
