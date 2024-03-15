@@ -1,7 +1,8 @@
 const ServiceRequest = () => {
     return (
-        <div className="font-bold text-5xl flex items-center justify-center">
+        <div className=" flex items-center justify-center">
             ServiceRequest
+            <h1 className="font-bold text-5xl pt-5">ServiceRequest</h1>
         </div>
     );
 };
