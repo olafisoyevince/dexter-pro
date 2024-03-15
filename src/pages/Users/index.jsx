@@ -68,6 +68,9 @@ const Users = () => {
                                         <th className=" text-left pl-2 py-4 text-sm font-normal">
                                             Name
                                         </th>
+                                        <th className=" text-left pl-2 py-4 text-sm font-normal">
+                                            Email
+                                        </th>
                                         <th className=" text-left py-4 text-sm font-normal">
                                             Location
                                         </th>
@@ -92,6 +95,9 @@ const Users = () => {
                                                   <td className="pl-2 text-left py-4 text-sm font-normal">
                                                       {user?.first_name}{" "}
                                                       {user?.last_name}
+                                                  </td>
+                                                  <td className="pl-2 text-left py-4 text-sm font-normal">
+                                                      {user.email}
                                                   </td>
                                                   <td className="text-left py-4 text-sm font-normal">
                                                       {truncateText(
@@ -130,6 +136,9 @@ const Users = () => {
                                                   <td className="pl-2 text-left py-4 text-sm font-normal">
                                                       {user.first_name}{" "}
                                                       {user.last_name}
+                                                  </td>
+                                                  <td className="pl-2 text-left py-4 text-sm font-normal">
+                                                      {user.email}
                                                   </td>
                                                   <td className="text-left py-4 text-sm font-normal">
                                                       {truncateText(
